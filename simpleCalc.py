@@ -17,8 +17,8 @@ def run_calculator():
 
         num2 = int(input("Введите второе число: "))
 
-        if num2 == 0 and (oper == "/" or oper == "//"):
-            print("Делить на ноль запрещено.")
+        if num2 == 0 and (oper == "/" or oper == "//" or oper == "%"):
+            print("Второе число не должно быть нулём.")
             continue
 
         print("--------------------------------")
