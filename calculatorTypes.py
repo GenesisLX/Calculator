@@ -5,13 +5,15 @@ from expressionCalc import run_calculator as run_expression_calc
 from convertCalc import run_calculator as run_convert_calc
 from betCalc import run_calculator as run_bet_calc
 from notationCalc import run_calculator as run_notation_calc
+from guiCalc import run_calculator as run_gui_calc
 
 calculatorTypes = {
     "1": {"handler": run_simple_calc, "name": "Простой калькулятор"},
     "2": {"handler": run_expression_calc, "name": "Вычисление примеров"},
     "3": {"handler": run_convert_calc, "name": "Конвертер температур"},
     "4": {"handler": run_bet_calc, "name": "Расчёт доходности вклада"},
-    "5": {"handler": run_notation_calc, "name": "Перевод в 10-ую систему счисления"}
+    "5": {"handler": run_notation_calc, "name": "Перевод в 10-ую систему счисления"},
+    "6": {"handler": run_gui_calc, "name": "GUI-калькулятор"}
 }
 
 
